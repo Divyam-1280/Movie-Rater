@@ -25,7 +25,7 @@ function MovieDetail() {
       {Object.keys(data).length === 0 ? (
         <div> ...Loading </div>
       ) : (
-        <div className="max-md:flex max-md:flex-col max-md:gap-4">
+        <>
           <div className="section-left">
             <div className="movie-title">{data.Title}</div>
             <div className="movie-rating">
@@ -70,7 +70,7 @@ function MovieDetail() {
           <div className="section-right ">
             <img src={data.Poster} alt={data.Title} />
           </div>
-        </div>
+        </>
       )}
     </div>
   );
